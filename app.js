@@ -21,12 +21,14 @@ gsap.to('.container-images img:nth-child(2)', {
 gsap.to('.container-btns button', {duration: 0.2, x: "random(-100, 100)", stagger: 0.2})
 
 // Enregistrer un tween
-gsap.registerEffect({
-    name: "imgCrazy",
-    effect: (targets, config) => {
-        return gsap.to(targets, {duration: config.duration, y: 200, scale: 1.4, rotation: 360})
-    },
-    defaults: {duration: 2}
-})
+// gsap.registerEffect({
+//     name: "imgCrazy",
+//     effect: (targets, config) => {
+//         return gsap.to(targets, {duration: config.duration, y: 200, scale: 1.4, rotation: 360})
+//     },
+//     defaults: {duration: 2}
+// })
 
-gsap.effects.imgCrazy(img1, {duration: 1})
+// gsap.effects.imgCrazy(img1, {duration: 1})
+
+gsap.set('.container-images img', {opacity: 0})
