@@ -31,4 +31,10 @@ gsap.to('.container-btns button', {duration: 0.2, x: "random(-100, 100)", stagge
 
 // gsap.effects.imgCrazy(img1, {duration: 1})
 
-gsap.set('.container-images img', {opacity: 0})
+// gsap.set('.container-images img', {opacity: 0})
+
+const anim = gsap.to(img1, {y: 100, yoyo: true, repeat: 1})
+anim.duration(5)
+anim.pause()
+anim.seek(2.5)
+anim.resume()
