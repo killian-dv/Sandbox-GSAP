@@ -8,8 +8,8 @@ const txt = document.querySelector('.txt')
 const TL = gsap.timeline()
 
 TL
-.to(img1, {autoAlpha: 1, y: 0})
-.to(img2, {autoAlpha: 1, y: 0})
-.to(img3, {autoAlpha: 1, y: 0})
-.to(title, {autoAlpha: 1, y: 0})
-.to(txt, {autoAlpha: 1, y: 0})
+.to(img1, {autoAlpha: 1, y: 0, duration: 1})
+.to(img2, {autoAlpha: 1, y: 0, duration: 1}, '-=0.75')
+.to(img3, {autoAlpha: 1, y: 0, duration: 1}, '-=0.75')
+.to(title, {autoAlpha: 1, y: 0, duration: 1}, '-=0.75')
+.to(txt, {autoAlpha: 1, y: 0, duration: 1}, '-=0.75')
